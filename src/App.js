@@ -1,20 +1,24 @@
 import './App.css';
 import HomePage from './Home.js';
 import {TicTacToe} from './tictactoe';
+import {AllHooks} from './hooks';
 import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Router>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/" exact>Home</NavLink>
                 </li>
                 <li class="nav-item">
                   <NavLink className="nav-link" to="/tictactoe" exact>Game: Tic Tac Toe</NavLink>
+                </li>
+                <li class="nav-item">
+                  <NavLink className="nav-link" to="/hooks" exact>Components on hooks</NavLink>
                 </li>
               </ul>
             </div>
@@ -23,6 +27,7 @@ function App() {
               <div class="content">
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/tictactoe" component={TicTacToe} />
+                <Route exact path="/hooks" component={AllHooks} />
               </div>
           </header>
       </Router>
