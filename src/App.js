@@ -2,6 +2,7 @@ import './App.css';
 import HomePage from './Home.js';
 import {TicTacToe} from './tictactoe';
 import {AllHooks} from './hooks';
+import RectanglesGame from './rectangles';
 import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
                   <NavLink className="nav-link" to="/tictactoe" exact>Game: Tic Tac Toe</NavLink>
                 </li>
                 <li class="nav-item">
+                  <NavLink className="nav-link" to="/rectangles" exact>Game: Rectangles</NavLink>
+                </li>
+                <li class="nav-item">
                   <NavLink className="nav-link" to="/hooks" exact>Components on hooks</NavLink>
                 </li>
               </ul>
@@ -27,6 +31,7 @@ function App() {
               <div class="content">
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/tictactoe" component={TicTacToe} />
+                <Route exact path="/rectangles" component={RectanglesGame} />
                 <Route exact path="/hooks" component={AllHooks} />
               </div>
           </header>

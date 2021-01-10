@@ -1,0 +1,58 @@
+.board {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    display:inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cell {
+    width:20px;
+    height:20px;
+    margin: 1px;
+    color: red;
+}
+.white {
+    background-color: white;
+}
+.black {
+    background-color: black;
+}
+.allHintsColumn{
+    margin-left: 57px;
+}
+.hintRow {
+    width:60px;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-right: 5px;
+}
+.hintColumn {
+    display: inline-block;
+    width: 22px;
+}
+.playing-box-0 {
+    width: 20px;
+    height: 20px;
+    background-color: #aaa;
+}
+.playing-box-1 {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+}
+.playing-box-2 {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+}
+.game-status {
+    margin: 30px;
+    font-size: 22px;
+}
+.win-game {
+    color: green;
+}
